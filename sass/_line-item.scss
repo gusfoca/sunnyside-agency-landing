@@ -1,0 +1,58 @@
+@use "breakpoints" as bp;
+
+%line-item {
+
+    width: 100vw;
+
+    height: 83.2vw;
+
+}
+
+%line-item-img {
+
+    @extend %line-item;
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+}
+
+.line-item {
+
+    @extend %line-item;
+
+}
+
+.transform-img {
+
+    @extend %line-item-img;
+
+    background-image: url('./images/mobile/image-transform.jpg');
+    
+}
+
+.standout-img {
+
+    @extend %line-item-img;
+
+    background-image: url('./images/mobile/image-stand-out.jpg');
+
+}
+
+@media screen and (min-width: bp.$desktop-start) {
+
+    .line-item,
+    .transform-img,
+    .standout-img
+    {
+
+        width: 49vw;
+
+        height: 41.67vw;
+
+    }
+
+}

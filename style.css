@@ -15,8 +15,52 @@
   src: url("./fonts/FrauncesBold.eot") format("embedded-opentype"), url("./fonts/FrauncesBold.woff2") format("woff2"), url("./fonts/FrauncesBold.woff") format("woff"), url("./fonts/FrauncesBold.ttf") format("truetype");
   font-weight: normal;
 }
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: Barlow;
+}
+
+body > * {
+  outline: 1px solid red;
+}
+
+.line-item, .standout-img, .transform-img {
+  width: 100vw;
+  height: 83.2vw;
+}
+
+.standout-img, .transform-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.transform-img {
+  background-image: url("./images/mobile/image-transform.jpg");
+}
+
+.standout-img {
+  background-image: url("./images/mobile/image-stand-out.jpg");
+}
+
+@media screen and (min-width: 600px) {
+  .line-item,
+.transform-img,
+.standout-img {
+    width: 49vw;
+    height: 41.67vw;
+  }
+}
+.page-header {
+  background: url("../images/mobile/image-header.jpg") center center no-repeat;
 }
 
 .attribution {

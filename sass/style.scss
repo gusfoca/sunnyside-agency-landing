@@ -1,9 +1,11 @@
-@use "fonts" as *;
+@use "base" as *;
 
-body {
-    
-    font-family: Barlow;
-    
+@use "line-item" as *;
+
+.page-header {
+
+    background: url("../images/mobile/image-header.jpg") center center no-repeat;
+
 }
 
 .attribution {
