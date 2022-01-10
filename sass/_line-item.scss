@@ -1,16 +1,6 @@
 @use "breakpoints" as bp;
 
-%line-item {
-
-    width: 100vw;
-
-    height: 83.2vw;
-
-}
-
 %line-item-img {
-
-    @extend %line-item;
 
     background-size: cover;
 
@@ -20,9 +10,11 @@
 
 }
 
-.line-item {
+.line-group > div {
 
-    @extend %line-item;
+    width: 100vw;
+
+    height: 83.2vw;
 
 }
 
@@ -44,10 +36,7 @@
 
 @media screen and (min-width: bp.$desktop-start) {
 
-    .line-item,
-    .transform-img,
-    .standout-img
-    {
+    .line-group > div {
 
         width: 49vw;
 
