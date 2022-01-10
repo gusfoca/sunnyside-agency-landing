@@ -1,12 +1,18 @@
 @use "breakpoints" as bp;
 
-%line-item-img {
+@mixin line-item($bg-image: none) {
 
-    background-size: cover;
+    background: {
 
-    background-position: center center;
+        size: cover;
 
-    background-repeat: no-repeat;
+        position: center center;
+
+        repeat: no-repeat;
+
+        image: if($bg-image, url($bg-image), null);
+
+    }
 
 }
 
@@ -18,23 +24,25 @@
 
 }
 
+.line-item {
+
+    @include line-item;
+
+}
+
 .transform-img {
 
-    @extend %line-item-img;
-
-    background-image: url('./images/mobile/image-transform.jpg');
+    @include line-item('./images/mobile/image-transform.jpg');
     
 }
 
 .standout-img {
 
-    @extend %line-item-img;
-
-    background-image: url('./images/mobile/image-stand-out.jpg');
+    @include line-item( './images/mobile/image-stand-out.jpg' );
 
 }
 
-@media screen and (min-width: bp.$desktop-start) {
+@media (min-width: bp.$desktop-start) {
 
     .line-group > div {
 
