@@ -16,11 +16,31 @@
 
 }
 
-.line-group > div {
+.line-group {
 
-    width: 100vw;
+    display: flex;
 
-    height: 83.2vw;
+    flex-wrap: wrap;
+
+}
+
+.line-group-reverse {
+
+    display: flex;
+
+    flex-wrap: wrap-reverse;
+
+}
+
+.line-group, .line-group-reverse {
+
+    > div {
+
+        width: 100vw;
+
+        height: 83.2vw;
+
+    }
 
 }
 
@@ -44,11 +64,15 @@
 
 @media (min-width: bp.$desktop-start) {
 
-    .line-group > div {
+    .line-group, .line-group-reverse {
 
-        width: 49vw;
+        > div {
 
-        height: 41.67vw;
+            width: 49vw;
+
+            height: 41.67vw;
+
+        }
 
     }
 
