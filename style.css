@@ -44,14 +44,14 @@ body > * {
   background-image: url(none);
 }
 
-.transform-img {
+.line-item-transform-img {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("./images/mobile/image-transform.jpg");
 }
 
-.standout-img {
+.line-item-standout-img {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

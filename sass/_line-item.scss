@@ -30,13 +30,13 @@
 
 }
 
-.transform-img {
+.line-item-transform-img {
 
     @include line-item('./images/mobile/image-transform.jpg');
     
 }
 
-.standout-img {
+.line-item-standout-img {
 
     @include line-item( './images/mobile/image-stand-out.jpg' );
 
