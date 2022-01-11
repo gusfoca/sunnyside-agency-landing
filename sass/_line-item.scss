@@ -6,7 +6,7 @@
 
         size: cover;
 
-        position: center center;
+        position: center top;
 
         repeat: no-repeat;
 
@@ -18,27 +18,43 @@
 
 .line-group {
 
-    display: flex;
+    &, &-2, &-reverse {
 
-    flex-wrap: wrap;
+        display: flex;
 
-}
+        > div {
 
-.line-group-reverse {
+            width: 100vw;
 
-    display: flex;
+        }
 
-    flex-wrap: wrap-reverse;
+    }
 
-}
+    &, &-2 {
 
-.line-group, .line-group-reverse {
+        flex-wrap: wrap;
 
-    > div {
+    }
 
-        width: 100vw;
+    &-reverse {
 
-        height: 83.2vw;
+        flex-wrap: wrap-reverse;
+
+    }
+
+    &, &-reverse {
+
+        > div {
+
+            height: 83.2vw;
+
+        }
+
+    }
+
+    &-2 > div {
+
+        height: 600px;
 
     }
 
@@ -48,17 +64,29 @@
 
     @include line-item;
 
-}
+    &-transform-img {
 
-.line-item-transform-img {
-
-    @include line-item('./images/mobile/image-transform.jpg');
+        @include line-item('./images/mobile/image-transform.jpg');
+        
+    }
     
-}
+    &-standout-img {
+    
+        @include line-item( './images/mobile/image-stand-out.jpg' );
+    
+    }
 
-.line-item-standout-img {
+    &-graphic-design {
 
-    @include line-item( './images/mobile/image-stand-out.jpg' );
+        @include line-item("./images/mobile/image-graphic-design.jpg");
+        
+    }
+
+    &-photography {
+
+        @include line-item("./images/mobile/image-photography.jpg");
+        
+    }
 
 }
 
@@ -66,14 +94,50 @@
 
     .line-group, .line-group-reverse {
 
-        > div {
+        &, &-2 {
 
-            width: 49vw;
-
+            > div {
+    
+                width: 49vw;
+    
+            }
+    
+        }
+    
+        & > div {
+    
             height: 41.67vw;
-
+    
         }
 
+    }
+
+    .line-item {
+
+        &-transform-img {
+
+            @include line-item('./images/desktop/image-transform.jpg');
+            
+        }
+        
+        &-standout-img {
+        
+            @include line-item( './images/desktop/image-stand-out.jpg' );
+        
+        }
+    
+        &-graphic-design {
+    
+            @include line-item("./images/desktop/image-graphic-design.jpg");
+            
+        }
+    
+        &-photography {
+    
+            @include line-item("./images/desktop/image-photography.jpg");
+            
+        }
+    
     }
 
 }

@@ -32,46 +32,87 @@ body > * {
   outline: 1px solid red;
 }
 
-.line-group {
+.line-group, .line-group-2, .line-group-reverse {
   display: flex;
+}
+.line-group > div, .line-group-2 > div, .line-group-reverse > div {
+  width: 100vw;
+}
+.line-group, .line-group-2 {
   flex-wrap: wrap;
 }
-
 .line-group-reverse {
-  display: flex;
   flex-wrap: wrap-reverse;
 }
-
 .line-group > div, .line-group-reverse > div {
-  width: 100vw;
   height: 83.2vw;
+}
+.line-group-2 > div {
+  height: 600px;
 }
 
 .line-item {
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-image: url(none);
 }
-
 .line-item-transform-img {
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-image: url("./images/mobile/image-transform.jpg");
 }
-
 .line-item-standout-img {
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-image: url("./images/mobile/image-stand-out.jpg");
 }
+.line-item-graphic-design {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url("./images/mobile/image-graphic-design.jpg");
+}
+.line-item-photography {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url("./images/mobile/image-photography.jpg");
+}
 
 @media (min-width: 600px) {
-  .line-group > div, .line-group-reverse > div {
+  .line-group > div, .line-group-2 > div, .line-group-reverse > div, .line-group-reverse-2 > div {
     width: 49vw;
+  }
+  .line-group > div, .line-group-reverse > div {
     height: 41.67vw;
+  }
+
+  .line-item-transform-img {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/desktop/image-transform.jpg");
+  }
+  .line-item-standout-img {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/desktop/image-stand-out.jpg");
+  }
+  .line-item-graphic-design {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+  }
+  .line-item-photography {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/desktop/image-photography.jpg");
   }
 }
 .page-header {
