@@ -104,8 +104,6 @@ $desktop-img-path: "./images/desktop";
 
 .line-item {
 
-    @include line-item;
-
     @each $item in $line-items {
 
         &-#{$item} {
