@@ -32,13 +32,13 @@ body > * {
   outline: 1px solid red;
 }
 
-.line-group, .line-group-2, .line-group-3, .line-group-reverse {
+.line-group, .line-group-2, .line-group-3, .line-group-4, .line-group-reverse {
   display: flex;
 }
-.line-group > div, .line-group-2 > div, .line-group-3 > div, .line-group-reverse > div {
+.line-group > div, .line-group-2 > div, .line-group-3 > div, .line-group-4 > div, .line-group-reverse > div {
   width: 100vw;
 }
-.line-group, .line-group-2, .line-group-3 {
+.line-group, .line-group-2, .line-group-3, .line-group-4 {
   flex-wrap: wrap;
 }
 .line-group-reverse {
@@ -60,6 +60,10 @@ body > * {
 }
 .line-group-3 > h4 {
   width: 100vw;
+}
+.line-group-4 > div {
+  width: 50%;
+  height: 50vw;
 }
 
 .line-item {
@@ -92,6 +96,30 @@ body > * {
   background-repeat: no-repeat;
   background-image: url("./images/mobile/image-photography.jpg");
 }
+.line-item-milkbottles {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url("./images/mobile/image-gallery-milkbottles.jpg");
+}
+.line-item-orange {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url("./images/mobile/image-gallery-orange.jpg");
+}
+.line-item-cone {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url("./images/mobile/image-gallery-cone.jpg");
+}
+.line-item-sugar-cubes {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg");
+}
 
 @media (min-width: 600px) {
   .line-group > div, .line-group-2 > div, .line-group-reverse > div, .line-group-reverse-2 > div {
@@ -105,6 +133,10 @@ body > * {
   }
   .line-group-3 > div, .line-group-reverse-3 > div {
     flex: 0 0 20vw;
+  }
+  .line-group-4 > div, .line-group-reverse-4 > div {
+    width: 25%;
+    height: 30.83vw;
   }
 
   .line-item-transform-img {
@@ -130,6 +162,30 @@ body > * {
     background-position: center top;
     background-repeat: no-repeat;
     background-image: url("./images/desktop/image-photography.jpg");
+  }
+  .line-item-milkbottles {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
+  }
+  .line-item-orange {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/desktop/image-gallery-orange.jpg");
+  }
+  .line-item-cone {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/desktop/image-gallery-cone.jpg");
+  }
+  .line-item-sugar-cubes {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/desktop/image-gallery-sugar-cubes.jpg");
   }
 }
 .page-header {

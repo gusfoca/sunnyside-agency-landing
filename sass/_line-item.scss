@@ -18,7 +18,7 @@
 
 .line-group {
 
-    &, &-2, &-3, &-reverse {
+    &, &-2, &-3, &-4, &-reverse {
 
         display: flex;
 
@@ -30,7 +30,7 @@
 
     }
 
-    &, &-2, &-3 {
+    &, &-2, &-3, &-4 {
 
         flex-wrap: wrap;
 
@@ -84,6 +84,14 @@
 
     }
 
+    &-4 > div {
+
+        width: 50%;
+
+        height: 50vw;
+
+    }
+
 }
 
 .line-item {
@@ -112,6 +120,30 @@
 
         @include line-item("./images/mobile/image-photography.jpg");
         
+    }
+
+    &-milkbottles {
+
+        @include line-item("./images/mobile/image-gallery-milkbottles.jpg");
+
+    }
+
+    &-orange {
+
+        @include line-item("./images/mobile/image-gallery-orange.jpg");
+
+    }
+
+    &-cone {
+
+        @include line-item("./images/mobile/image-gallery-cone.jpg");
+
+    }
+
+    &-sugar-cubes {
+
+        @include line-item("./images/mobile/image-gallery-sugar-cubes.jpg");
+
     }
 
 }
@@ -148,6 +180,14 @@
 
         }
 
+        &-4 > div {
+            
+            width: 25%;
+
+            height: 30.83vw;
+
+        }
+
     }
 
     .line-item {
@@ -174,6 +214,30 @@
     
             @include line-item("./images/desktop/image-photography.jpg");
             
+        }
+
+        &-milkbottles {
+
+            @include line-item("./images/desktop/image-gallery-milkbottles.jpg");
+    
+        }
+    
+        &-orange {
+    
+            @include line-item("./images/desktop/image-gallery-orange.jpg");
+    
+        }
+    
+        &-cone {
+    
+            @include line-item("./images/desktop/image-gallery-cone.jpg");
+    
+        }
+    
+        &-sugar-cubes {
+    
+            @include line-item("./images/desktop/image-gallery-sugar-cubes.jpg");
+    
         }
     
     }
