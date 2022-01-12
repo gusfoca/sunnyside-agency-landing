@@ -1,5 +1,13 @@
 @use "breakpoints" as bp;
 
+$line-items: "transform", "stand-out", "photography", "graphic-design",
+             "gallery-cone", "gallery-milkbottles", "gallery-orange", "gallery-sugar-cubes";
+
+$mobile-img-path: "./images/mobile";
+
+$desktop-img-path: "./images/desktop";
+
+
 @mixin line-item($bg-image: none) {
 
     background: {
@@ -98,51 +106,13 @@
 
     @include line-item;
 
-    &-transform-img {
+    @each $item in $line-items {
 
-        @include line-item('./images/mobile/image-transform.jpg');
-        
-    }
-    
-    &-stand-out-img {
-    
-        @include line-item( './images/mobile/image-stand-out.jpg' );
-    
-    }
+        &-#{$item} {
 
-    &-graphic-design {
+            @include line-item("#{$mobile-img-path}/image-#{$item}.jpg");
 
-        @include line-item("./images/mobile/image-graphic-design.jpg");
-        
-    }
-
-    &-photography {
-
-        @include line-item("./images/mobile/image-photography.jpg");
-        
-    }
-
-    &-milkbottles {
-
-        @include line-item("./images/mobile/image-gallery-milkbottles.jpg");
-
-    }
-
-    &-orange {
-
-        @include line-item("./images/mobile/image-gallery-orange.jpg");
-
-    }
-
-    &-cone {
-
-        @include line-item("./images/mobile/image-gallery-cone.jpg");
-
-    }
-
-    &-sugar-cubes {
-
-        @include line-item("./images/mobile/image-gallery-sugar-cubes.jpg");
+        }
 
     }
 
@@ -192,54 +162,16 @@
 
     .line-item {
 
-        &-transform-img {
+        @each $item in $line-items {
 
-            @include line-item('./images/desktop/image-transform.jpg');
-            
-        }
-        
-        &-stand-out-img {
-        
-            @include line-item( './images/desktop/image-stand-out.jpg' );
-        
-        }
-    
-        &-graphic-design {
-    
-            @include line-item("./images/desktop/image-graphic-design.jpg");
-            
-        }
-    
-        &-photography {
-    
-            @include line-item("./images/desktop/image-photography.jpg");
-            
+            &-#{$item} {
+
+                @include line-item("#{$desktop-img-path}/image-#{$item}.jpg");
+
+            }
+
         }
 
-        &-milkbottles {
-
-            @include line-item("./images/desktop/image-gallery-milkbottles.jpg");
-    
-        }
-    
-        &-orange {
-    
-            @include line-item("./images/desktop/image-gallery-orange.jpg");
-    
-        }
-    
-        &-cone {
-    
-            @include line-item("./images/desktop/image-gallery-cone.jpg");
-    
-        }
-    
-        &-sugar-cubes {
-    
-            @include line-item("./images/desktop/image-gallery-sugar-cubes.jpg");
-    
-        }
-    
     }
 
 }
