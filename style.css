@@ -78,7 +78,7 @@ body > * {
   background-repeat: no-repeat;
   background-image: url("./images/mobile/image-transform.jpg");
 }
-.line-item-standout-img {
+.line-item-stand-out-img {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -145,7 +145,7 @@ body > * {
     background-repeat: no-repeat;
     background-image: url("./images/desktop/image-transform.jpg");
   }
-  .line-item-standout-img {
+  .line-item-stand-out-img {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
