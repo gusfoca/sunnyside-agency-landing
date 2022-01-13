@@ -190,8 +190,31 @@ footer > div {
   width: max-content;
 }
 
-.page-header {
-  background: url("../images/mobile/image-header.jpg") center center no-repeat;
+header {
+  background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
+  height: 143.2vw;
+  color: white;
+}
+header > h1, header > img {
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+}
+header > img {
+  position: absolute;
+  height: 31vw;
+  width: 10.133vw;
+  top: 76.8vw;
+  left: 44.934vw;
+}
+header .navbar-contact-link {
+  color: black;
+  background-color: yellow;
+  padding: 15px;
+  width: 140px;
+  font-size: 18px;
+  font-family: Fraunces;
+  text-align: center;
 }
 
 .attribution {

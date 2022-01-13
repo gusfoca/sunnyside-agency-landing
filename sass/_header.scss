@@ -1,0 +1,56 @@
+
+header {
+
+    background: url("./images/mobile/image-header.jpg") center / cover no-repeat;
+
+    height: 143.2vw;
+
+    color: white;
+
+    > {
+
+        h1, img {
+
+            display: block;
+
+            margin: 0 auto;
+
+            width: max-content;
+
+        }
+
+        img {
+
+            position: absolute;
+
+            height: 31vw;
+
+            width: 10.133vw;
+
+            top: 76.8vw;
+
+            left: calc(50vw - 5.066vw);
+
+        }
+
+    }
+
+    .navbar-contact-link {
+
+        color: black;
+
+        background-color: yellow;
+
+        padding: 15px;
+
+        width: 140px;
+
+        font-size: 18px;
+
+        font-family: Fraunces;
+
+        text-align: center;
+
+    }
+
+}
