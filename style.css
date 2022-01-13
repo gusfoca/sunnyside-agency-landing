@@ -182,6 +182,14 @@ body > * {
     background-image: url("./images/desktop/image-gallery-sugar-cubes.jpg");
   }
 }
+footer {
+  background-color: mediumaquamarine;
+}
+footer > div {
+  margin: 0 auto;
+  width: max-content;
+}
+
 .page-header {
   background: url("../images/mobile/image-header.jpg") center center no-repeat;
 }
