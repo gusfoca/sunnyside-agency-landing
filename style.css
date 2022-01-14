@@ -195,27 +195,26 @@ footer > div {
 }
 
 header {
-  background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
-  height: 143.2vw;
+  background: url("./images/desktop/image-header.jpg") center/cover no-repeat;
+  height: 55.55vw;
   color: white;
 }
-header > h1, header > img {
-  display: block;
-  margin: 0 auto;
-  width: max-content;
-}
 header > h1 {
-  margin-top: 41.33vw;
-  font-size: 2rem;
+  position: absolute;
+  top: 13.7vw;
+  width: 100%;
+  font-size: 3.809vw;
   font-family: Fraunces;
   font-weight: bold;
+  letter-spacing: 0.75vw;
+  text-align: center;
 }
 header > img {
   position: absolute;
-  height: 31vw;
-  width: 10.133vw;
-  top: 76.8vw;
-  left: 44.934vw;
+  height: 116.25px;
+  width: 38px;
+  top: 24.79vw;
+  left: calc(50vw - 19px);
 }
 header > nav {
   display: flow-root;
@@ -249,6 +248,7 @@ header > nav .navbar-contact-link {
     top: 105px;
     right: 25px;
     text-align: center;
+    z-index: 1;
   }
   .bubble > div {
     width: 100%;
@@ -269,6 +269,19 @@ header > nav .navbar-contact-link {
   .nav-hamburger {
     display: block;
     float: right;
+  }
+
+  header {
+    background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
+    height: 143.2vw;
+  }
+  header > h1 {
+    top: 39vw;
+    font-size: 9.955vw;
+    letter-spacing: 2vw;
+  }
+  header > img {
+    top: 76.8vw;
   }
 }
 .attribution {

@@ -1,34 +1,40 @@
 @use "breakpoints" as bs;
 
+@use "base" as *;
+
+@mixin header-background($path) {
+
+    background: url("#{$path}/image-header.jpg") center / cover no-repeat;
+
+}
+
 header {
 
-    background: url("./images/mobile/image-header.jpg") center / cover no-repeat;
+    @include header-background($path: $desktop-img-path);
 
-    height: 143.2vw;
+    height: 55.55vw;
 
     color: white;
 
     > {
 
-        h1, img {
-
-            display: block;
-
-            margin: 0 auto;
-
-            width: max-content;
-
-        }
-
         h1 {
 
-            margin-top: 41.33vw;
+            position: absolute;
 
-            font-size: 2rem;
+            top: 13.7vw;
+
+            width: 100%;
+
+            font-size: 3.809vw;
 
             font-family: Fraunces;
 
             font-weight: bold;
+
+            letter-spacing: 0.75vw;
+
+            text-align: center;
 
         }
 
@@ -36,13 +42,13 @@ header {
 
             position: absolute;
 
-            height: 31vw;
+            height: 116.25px;
 
-            width: 10.133vw;
+            width: 38px;
 
-            top: 76.8vw;
+            top: 24.79vw;
 
-            left: calc(50vw - 5.066vw);
+            left: calc(50vw - 19px);
 
         }
 
@@ -110,6 +116,8 @@ header {
 
         text-align: center;        
 
+        z-index: 1;
+
         > div {
 
             width: 100%;
@@ -144,6 +152,34 @@ header {
         display: block;
 
         float: right;
+
+    }
+
+    header {
+
+        @include header-background($path: $mobile-img-path);
+
+        height: 143.2vw;
+
+        > {
+            
+            h1 {
+
+                top: 39vw;
+
+                font-size: 9.955vw;
+
+                letter-spacing: 2vw;
+
+            }
+
+            img {
+
+                top: 76.8vw;
+    
+            }
+
+        }
 
     }
 

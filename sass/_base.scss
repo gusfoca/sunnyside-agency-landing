@@ -1,5 +1,9 @@
 @use "fonts" as *;
 
+$mobile-img-path: "./images/mobile";
+
+$desktop-img-path: "./images/desktop";
+
 *, *::before, *::after {
 
     margin: 0;
