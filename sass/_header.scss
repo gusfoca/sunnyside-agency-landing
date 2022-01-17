@@ -36,6 +36,8 @@ header {
 
             text-align: center;
 
+            line-height: 12.533vw;
+
         }
 
         img {
@@ -56,9 +58,25 @@ header {
 
             display: flow-root;
 
+            position: relative;
+
+            padding: 2.291vw 3.263vw 0 2.777vw;
+
             * {
 
                 display: inline-block;
+
+            }
+
+            .nav-logo {
+
+                position: absolute;
+
+                width: 11.805vw;
+
+                left: 2.777vw;
+
+                top: 3.125vw;
 
             }
 
@@ -163,6 +181,20 @@ header {
         height: 143.2vw;
 
         > {
+
+            nav {
+
+                padding: 30px 25px;
+
+                > .nav-logo {
+
+                    position: initial;
+
+                    width: auto;
+
+                }
+
+            }
             
             h1 {
 

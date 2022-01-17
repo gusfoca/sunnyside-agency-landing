@@ -208,6 +208,7 @@ header > h1 {
   font-weight: bold;
   letter-spacing: 0.75vw;
   text-align: center;
+  line-height: 12.533vw;
 }
 header > img {
   position: absolute;
@@ -218,9 +219,17 @@ header > img {
 }
 header > nav {
   display: flow-root;
+  position: relative;
+  padding: 2.291vw 3.263vw 0 2.777vw;
 }
 header > nav * {
   display: inline-block;
+}
+header > nav .nav-logo {
+  position: absolute;
+  width: 11.805vw;
+  left: 2.777vw;
+  top: 3.125vw;
 }
 header > nav .bubble {
   float: right;
@@ -274,6 +283,13 @@ header > nav .navbar-contact-link {
   header {
     background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
     height: 143.2vw;
+  }
+  header > nav {
+    padding: 30px 25px;
+  }
+  header > nav > .nav-logo {
+    position: initial;
+    width: auto;
   }
   header > h1 {
     top: 39vw;
