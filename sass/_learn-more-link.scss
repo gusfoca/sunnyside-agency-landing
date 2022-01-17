@@ -1,0 +1,45 @@
+
+@mixin learn-more-link($bg-color: black) {
+
+    position: relative;
+
+    padding: 0 23px;
+
+    left: 30px;
+
+    &:hover > div {
+
+        position: absolute;
+
+        height: 10px;
+
+        width: 100%;
+
+        bottom: -3px;
+
+        left: 0;
+
+        border-radius: 5px;
+
+        background-color: $bg-color;
+
+        z-index: -1;
+
+    }
+}
+
+.learn-more-link {
+    
+    &-transform {
+
+        @include learn-more-link($bg-color: yellow);
+    
+    }
+
+    &-stand-out {
+
+        @include learn-more-link($bg-color: red);
+
+    }
+
+}
