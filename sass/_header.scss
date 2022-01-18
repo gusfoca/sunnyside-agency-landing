@@ -60,7 +60,7 @@ header {
 
             position: relative;
 
-            padding: 2.291vw 3.263vw 0 2.777vw;
+            padding: 33px 3.263vw;
 
             * {
 
@@ -72,11 +72,11 @@ header {
 
                 position: absolute;
 
-                width: 11.805vw;
+                width: max(124px, 11.805vw);
 
-                left: 2.777vw;
+                left: 40px;
 
-                top: 3.125vw;
+                top: 47px;
 
             }
 

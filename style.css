@@ -224,16 +224,16 @@ header > img {
 header > nav {
   display: flow-root;
   position: relative;
-  padding: 2.291vw 3.263vw 0 2.777vw;
+  padding: 33px 3.263vw;
 }
 header > nav * {
   display: inline-block;
 }
 header > nav .nav-logo {
   position: absolute;
-  width: 11.805vw;
-  left: 2.777vw;
-  top: 3.125vw;
+  width: max(124px, 11.805vw);
+  left: 40px;
+  top: 47px;
 }
 header > nav .bubble {
   float: right;
