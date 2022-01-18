@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: 0;
+}
+
 html {
   font-size: 18px;
 }
@@ -253,15 +257,25 @@ header > nav .navbar-contact-link {
   .bubble {
     background-color: white;
     position: absolute;
-    width: 330px;
+    padding: 38px 0 40px 0;
+    width: initial !important;
     top: 105px;
-    right: 25px;
+    right: 24px;
+    left: 22px;
     text-align: center;
     z-index: 1;
   }
-  .bubble > div {
+  .bubble > a, .bubble button {
     width: 100%;
     color: gray;
+  }
+  .bubble > a {
+    margin-bottom: 26px;
+    font-size: 1.15em;
+  }
+  .bubble > button {
+    margin-top: 10px;
+    font-size: 0.85em !important;
   }
   .bubble .navbar-contact-link {
     background-color: yellow;
