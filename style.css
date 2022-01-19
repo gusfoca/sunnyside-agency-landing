@@ -57,6 +57,18 @@ body > * {
 .line-group-reverse {
   flex-wrap: wrap-reverse;
 }
+.line-group-reverse > div {
+  font-size: 1.24vw;
+}
+.line-group-reverse > div h2 {
+  font-size: 2.75vw;
+}
+.line-group-reverse > div a {
+  font-family: Fraunces;
+  font-size: 1.15vw;
+  font-weight: bold;
+  color: black;
+}
 .line-group > div, .line-group-reverse > div {
   height: 83.2vw;
 }

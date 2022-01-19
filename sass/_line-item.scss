@@ -48,6 +48,29 @@ $desktop-img-path: "./images/desktop";
 
         flex-wrap: wrap-reverse;
 
+        > div {
+
+            font-size: 1.24vw;
+
+            h2 {
+
+                font-size: 2.75vw;
+
+            }
+
+            a {
+
+                font-family: Fraunces;
+
+                font-size: 1.15vw;
+
+                font-weight: bold;
+
+                color: black;
+
+            }
+        }
+
     }
 
     &, &-reverse {
