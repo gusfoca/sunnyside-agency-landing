@@ -26,9 +26,11 @@ $desktop-img-path: "./images/desktop";
 
 .line-group {
 
-    &, &-2, &-3, &-4, &-reverse {
+    &, &-1, &-2, &-3, &-4 {
 
         display: flex;
+
+        flex-wrap: wrap;
 
         > div {
 
@@ -38,15 +40,7 @@ $desktop-img-path: "./images/desktop";
 
     }
 
-    &, &-2, &-3, &-4 {
-
-        flex-wrap: wrap;
-
-    }
-
-    &-reverse {
-
-        flex-wrap: wrap-reverse;
+    &-1 {
 
         > div {
 
@@ -73,7 +67,7 @@ $desktop-img-path: "./images/desktop";
 
     }
 
-    &, &-reverse {
+    &, &-1 {
 
         > div {
 
@@ -141,7 +135,13 @@ $desktop-img-path: "./images/desktop";
 
 @media (min-width: bp.$desktop-start) {
 
-    .line-group, .line-group-reverse {
+    .line-item-transform {
+
+        order: 1;
+
+    }
+
+    .line-group, .line-group-1 {
 
         &, &-2 {
 
