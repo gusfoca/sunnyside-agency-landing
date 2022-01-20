@@ -1,13 +1,13 @@
 
-@mixin learn-more-link($bg-color: black) {
+@mixin learn-more-link($bg-color: black, $bg-color-active: white) {
 
     position: relative;
 
-    padding: 0 23px;
+    padding: 0 9px;
 
     left: 30px;
 
-    &:hover > div {
+    & > div {
 
         position: absolute;
 
@@ -26,19 +26,25 @@
         z-index: -1;
 
     }
+
+    &:hover > div {
+
+        background-color: $bg-color-active;
+
+    }
 }
 
 .learn-more-link {
     
     &-transform {
 
-        @include learn-more-link($bg-color: yellow);
+        @include learn-more-link($bg-color: yellow, $bg-color-active: gold);
     
     }
 
     &-stand-out {
 
-        @include learn-more-link($bg-color: red);
+        @include learn-more-link($bg-color: magenta, $bg-color-active: red);
 
     }
 
