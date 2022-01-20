@@ -26,7 +26,7 @@ $desktop-img-path: "./images/desktop";
 
 .line-group {
 
-    &, &-1, &-2, &-3, &-4 {
+    &-1, &-2, &-3, &-4 {
 
         display: flex;
 
@@ -67,7 +67,7 @@ $desktop-img-path: "./images/desktop";
 
     }
 
-    &, &-1 {
+    &-1 {
 
         > div {
 
@@ -141,9 +141,9 @@ $desktop-img-path: "./images/desktop";
 
     }
 
-    .line-group, .line-group-1 {
+    .line-group {
 
-        &, &-2 {
+        &-1, &-2 {
 
             > div {
     
@@ -153,7 +153,7 @@ $desktop-img-path: "./images/desktop";
     
         }
     
-        & > div {
+        &-1 > div {
     
             height: 41.67vw;
     
