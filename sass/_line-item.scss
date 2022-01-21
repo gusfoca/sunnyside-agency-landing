@@ -153,10 +153,32 @@ $desktop-img-path: "./images/desktop";
     
         }
     
-        &-1 > div {
-    
-            height: 41.67vw;
-    
+        &-1 > {
+
+            div {
+
+                height: 41.67vw;
+
+                padding: 11vw 6vw 0 11.458vw;
+
+            }
+
+            .line-item-info {
+
+                h2 {
+
+                    line-height: 3rem;
+
+                }
+
+                p {
+
+                    margin: 2.2vw 0 2.8vw 0;
+
+                }
+
+            }
+
         }
 
         &-3 {

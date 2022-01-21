@@ -145,6 +145,13 @@ body > * {
   }
   .line-group-1 > div {
     height: 41.67vw;
+    padding: 11vw 6vw 0 11.458vw;
+  }
+  .line-group-1 > .line-item-info h2 {
+    line-height: 3rem;
+  }
+  .line-group-1 > .line-item-info p {
+    margin: 2.2vw 0 2.8vw 0;
   }
   .line-group-3 {
     height: 780px;
@@ -333,7 +340,6 @@ header > nav .navbar-contact-link {
 .learn-more-link-transform {
   position: relative;
   padding: 0 9px;
-  left: 30px;
 }
 .learn-more-link-transform > div {
   position: absolute;
@@ -351,7 +357,6 @@ header > nav .navbar-contact-link {
 .learn-more-link-stand-out {
   position: relative;
   padding: 0 9px;
-  left: 30px;
 }
 .learn-more-link-stand-out > div {
   position: absolute;
