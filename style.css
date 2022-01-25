@@ -53,19 +53,28 @@ body > * {
   width: 100vw;
 }
 .line-group-1 > div {
-  font-size: 1.24vw;
+  text-align: center;
+  font-size: 4.73vw;
+  padding: 18vw 8vw 0 8vw;
 }
 .line-group-1 > div h2 {
-  font-size: 2.75vw;
+  font-size: 8.5vw;
+  line-height: 10vw;
+}
+.line-group-1 > div p {
+  margin: 6.5vw 0 7vw 0;
 }
 .line-group-1 > div a {
   font-family: Fraunces;
-  font-size: 1.15vw;
+  font-size: 4.5vw;
   font-weight: bold;
   color: black;
 }
 .line-group-1 > div {
   height: 83.2vw;
+}
+.line-group-1 .line-item-info {
+  height: 116.266vw;
 }
 .line-group-2 > div {
   height: 600px;
@@ -144,14 +153,24 @@ body > * {
     width: 49vw;
   }
   .line-group-1 > div {
+    text-align: initial;
+    font-size: 1.24vw;
     height: 41.67vw;
     padding: 11vw 6vw 0 11.458vw;
+    line-height: 2.2vw;
+  }
+  .line-group-1 > .line-item-info {
+    height: initial;
   }
   .line-group-1 > .line-item-info h2 {
+    font-size: 2.75vw;
     line-height: 3rem;
   }
   .line-group-1 > .line-item-info p {
     margin: 2.2vw 0 2.8vw 0;
+  }
+  .line-group-1 > .line-item-info a {
+    font-size: 1.15vw;
   }
   .line-group-3 {
     height: 780px;

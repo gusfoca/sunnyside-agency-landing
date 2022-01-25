@@ -44,11 +44,25 @@ $desktop-img-path: "./images/desktop";
 
         > div {
 
-            font-size: 1.24vw;
+            text-align: center;
+
+            font-size: 4.73vw;
+
+            padding: 18vw 8vw 0 8vw;
+
+            // line-height: 8vw;
 
             h2 {
 
-                font-size: 2.75vw;
+                font-size: 8.5vw;
+
+                line-height: 10vw;
+
+            }
+
+            p {
+
+                margin: 6.5vw 0 7vw 0;
 
             }
 
@@ -56,14 +70,14 @@ $desktop-img-path: "./images/desktop";
 
                 font-family: Fraunces;
 
-                font-size: 1.15vw;
+                font-size: 4.5vw;
 
                 font-weight: bold;
 
                 color: black;
 
             }
-        }
+        }        
 
     }
 
@@ -73,6 +87,12 @@ $desktop-img-path: "./images/desktop";
 
             height: 83.2vw;
 
+        }
+
+        .line-item-info {
+
+            height: 116.266vw;
+        
         }
 
     }
@@ -157,15 +177,25 @@ $desktop-img-path: "./images/desktop";
 
             div {
 
+                text-align: initial;
+
+                font-size: 1.24vw;
+
                 height: 41.67vw;
 
                 padding: 11vw 6vw 0 11.458vw;
+
+                line-height: 2.2vw;
 
             }
 
             .line-item-info {
 
+                height: initial;
+
                 h2 {
+
+                    font-size: 2.75vw;
 
                     line-height: 3rem;
 
@@ -174,6 +204,12 @@ $desktop-img-path: "./images/desktop";
                 p {
 
                     margin: 2.2vw 0 2.8vw 0;
+
+                }
+
+                a {
+
+                    font-size: 1.15vw;
 
                 }
 
