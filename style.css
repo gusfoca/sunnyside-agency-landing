@@ -77,7 +77,14 @@ body > * {
   height: 116.266vw;
 }
 .line-group-2 > div {
+  padding: 0 6.4vw 0 6.4vw;
+  text-align: center;
   height: 600px;
+  font-size: 4.2vw;
+}
+.line-group-2 > div h3 {
+  font-size: 7.5vw;
+  margin: 107vw 0 7.6vw 0;
 }
 .line-group-3 {
   height: 1260px;

@@ -97,9 +97,27 @@ $desktop-img-path: "./images/desktop";
 
     }
 
-    &-2 > div {
+    &-2 {
 
-        height: 600px;
+        > div {
+
+            padding: 0 6.4vw 0 6.4vw;
+
+            text-align: center;
+
+            height: 600px;
+
+            font-size: 4.2vw;
+
+            h3 {
+
+                font-size: 7.5vw;
+
+                margin: 107vw 0 7.6vw 0;
+
+            }
+
+        }
 
     }
 
