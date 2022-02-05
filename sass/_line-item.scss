@@ -50,7 +50,7 @@ $desktop-img-path: "./images/desktop";
 
             padding: 18vw 8vw 0 8vw;
 
-            // line-height: 8vw;
+            height: 83.2vw;
 
             h2 {
 
@@ -77,16 +77,6 @@ $desktop-img-path: "./images/desktop";
                 color: black;
 
             }
-        }        
-
-    }
-
-    &-1 {
-
-        > div {
-
-            height: 83.2vw;
-
         }
 
         .line-item-info {
