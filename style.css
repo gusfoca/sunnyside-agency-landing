@@ -20,8 +20,11 @@
   padding: 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, .lg3-hd {
   font-family: Fraunces;
+}
+
+h1, h2, h3 {
   font-weight: bold;
 }
 
@@ -89,11 +92,26 @@ body > * {
   justify-content: space-around;
   outline: 1px solid green;
 }
-.line-group-3 > h4, .line-group-3 > div {
+.line-group-3 img {
+  width: 74px;
+}
+.line-group-3 p {
+  line-height: 33px;
+}
+.line-group-3 .testimonial-name {
+  font-family: Fraunces;
+  font-weight: bold;
+  font-size: 18px;
+}
+.line-group-3 .testimonial-role {
+  font-size: 14px;
+}
+.line-group-3 > .lg3-hd, .line-group-3 > div {
   text-align: center;
 }
-.line-group-3 > h4 {
+.line-group-3 > .lg3-hd {
   width: 100vw;
+  font-size: 22.5px;
 }
 .line-group-4 > div {
   width: 50%;

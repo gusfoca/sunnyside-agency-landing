@@ -119,19 +119,49 @@ $desktop-img-path: "./images/desktop";
 
         outline: 1px solid green;
 
+        img {
+
+            width: 74px;
+
+        }
+
+        p {
+
+            line-height: 33px;
+
+        }
+
+        .testimonial-name {
+
+            font-family: Fraunces;
+
+            font-weight: bold;
+
+            font-size: 18px;
+
+        }
+
+        .testimonial-role {
+
+            font-size: 14px;
+
+        }
+
         > {
 
-            h4, div {
+            .lg3-hd, div {
 
                 text-align: center;
 
             }
 
-            h4 {
-
+            .lg3-hd {
+                
                 width: 100vw;
 
-            }
+                font-size: 22.5px;
+
+            }            
 
         }
 
