@@ -118,7 +118,8 @@ body > * {
 }
 .line-group-3 > .lg3-hd {
   width: 100vw;
-  font-size: 22.5px;
+  font-size: 17px;
+  letter-spacing: 4px;
 }
 .line-group-4 > div {
   width: 50%;
