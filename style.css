@@ -90,9 +90,11 @@ body > * {
 .line-group-3 {
   height: 1260px;
   justify-content: space-around;
-  outline: 1px solid green;
+  align-content: flex-start;
+  padding-top: 59px;
 }
 .line-group-3 img {
+  margin-bottom: 32px;
   width: 74px;
 }
 .line-group-3 p {
@@ -105,6 +107,11 @@ body > * {
 }
 .line-group-3 .testimonial-role {
   font-size: 14px;
+  line-height: 0;
+}
+.line-group-3 .testimonial {
+  margin-top: 60px;
+  width: 330px;
 }
 .line-group-3 > .lg3-hd, .line-group-3 > div {
   text-align: center;

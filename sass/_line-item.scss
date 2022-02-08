@@ -117,9 +117,13 @@ $desktop-img-path: "./images/desktop";
 
         justify-content: space-around;
 
-        outline: 1px solid green;
+        align-content: flex-start;
+
+        padding-top: 59px;
 
         img {
+
+            margin-bottom: 32px;
 
             width: 74px;
 
@@ -144,6 +148,16 @@ $desktop-img-path: "./images/desktop";
         .testimonial-role {
 
             font-size: 14px;
+
+            line-height: 0;
+
+        }
+
+        .testimonial {
+
+            margin-top: 60px;
+
+            width: 330px;
 
         }
 
