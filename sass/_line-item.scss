@@ -170,7 +170,7 @@ $desktop-img-path: "./images/desktop";
             }
 
             .lg3-hd {
-                
+
                 width: 100vw;
 
                 font-size: 17px;
@@ -295,9 +295,75 @@ $desktop-img-path: "./images/desktop";
 
             height: 780px;
 
-            > div {
+            // > div.testimonial {
 
-                flex: 0 0 20vw;
+            //     flex: 0 0 20vw;
+
+            // }
+
+            // justify-content: space-around;
+
+            // align-content: flex-start;
+
+            // padding-top: 59px;
+
+            // img {
+
+            //     margin-bottom: 32px;
+
+            //     width: 74px;
+
+            // }
+
+            // p {
+
+            //     line-height: 33px;
+
+            // }
+
+            // .testimonial-name {
+
+            //     font-family: Fraunces;
+
+            //     font-weight: bold;
+
+            //     font-size: 18px;
+
+            // }
+
+            // .testimonial-role {
+
+            //     font-size: 14px;
+
+            //     line-height: 0;
+
+            // }
+
+            .testimonial {
+
+                // margin-top: 60px;
+
+                width: 355px;
+
+            }
+
+            > {
+
+                // .lg3-hd, div {
+
+                //     text-align: center;
+
+                // }
+
+                .lg3-hd {
+
+                    // width: 100vw;
+
+                    font-size: 21px;
+
+                    letter-spacing: 5px;
+
+                }            
 
             }
 

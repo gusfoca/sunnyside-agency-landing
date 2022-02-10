@@ -214,8 +214,12 @@ body > * {
   .line-group-3 {
     height: 780px;
   }
-  .line-group-3 > div {
-    flex: 0 0 20vw;
+  .line-group-3 .testimonial {
+    width: 355px;
+  }
+  .line-group-3 > .lg3-hd {
+    font-size: 21px;
+    letter-spacing: 5px;
   }
   .line-group-4 > div {
     width: 25%;
