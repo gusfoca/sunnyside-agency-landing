@@ -293,71 +293,37 @@ $desktop-img-path: "./images/desktop";
 
         &-3 {
 
-            height: 780px;
+            height: auto;
 
-            // > div.testimonial {
+            justify-content: center;
 
-            //     flex: 0 0 20vw;
+            padding: 157px 0 154px 0;
 
-            // }
+            column-gap: 2.778vw;
 
-            // justify-content: space-around;
+            img {
 
-            // align-content: flex-start;
+                margin-bottom: 57px;
 
-            // padding-top: 59px;
+            }
 
-            // img {
+            .testimonial-name {
 
-            //     margin-bottom: 32px;
+                margin-top: 64px;
 
-            //     width: 74px;
-
-            // }
-
-            // p {
-
-            //     line-height: 33px;
-
-            // }
-
-            // .testimonial-name {
-
-            //     font-family: Fraunces;
-
-            //     font-weight: bold;
-
-            //     font-size: 18px;
-
-            // }
-
-            // .testimonial-role {
-
-            //     font-size: 14px;
-
-            //     line-height: 0;
-
-            // }
+            }
 
             .testimonial {
 
-                // margin-top: 60px;
+                margin-top: 79px;
 
-                width: 355px;
+                width: 348px;
 
             }
 
             > {
 
-                // .lg3-hd, div {
-
-                //     text-align: center;
-
-                // }
-
                 .lg3-hd {
-
-                    // width: 100vw;
 
                     font-size: 21px;
 

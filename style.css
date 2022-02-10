@@ -212,10 +212,20 @@ body > * {
     margin: 28.61vw 0 2vw 0;
   }
   .line-group-3 {
-    height: 780px;
+    height: auto;
+    justify-content: center;
+    padding: 157px 0 154px 0;
+    column-gap: 2.778vw;
+  }
+  .line-group-3 img {
+    margin-bottom: 57px;
+  }
+  .line-group-3 .testimonial-name {
+    margin-top: 64px;
   }
   .line-group-3 .testimonial {
-    width: 355px;
+    margin-top: 79px;
+    width: 348px;
   }
   .line-group-3 > .lg3-hd {
     font-size: 21px;
