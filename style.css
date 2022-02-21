@@ -355,6 +355,9 @@ header > nav .bubble {
   float: right;
   width: max-content;
 }
+header > nav .bubble a {
+  margin-right: 50px;
+}
 header > nav .navbar-contact-link {
   color: black;
   background-color: white;
