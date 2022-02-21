@@ -292,6 +292,16 @@ footer > div {
   margin: 0 auto;
   width: max-content;
 }
+footer img {
+  height: 34px;
+}
+footer .text-links {
+  font-size: 18px;
+}
+footer .media-links img {
+  width: 20px;
+  height: 20px;
+}
 
 header {
   background: url("./images/desktop/image-header.jpg") center/cover no-repeat;
