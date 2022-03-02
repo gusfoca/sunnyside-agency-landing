@@ -57,20 +57,26 @@ body > * {
 }
 .line-group-1 > div {
   text-align: center;
-  font-size: 4.73vw;
-  padding: 18vw 8vw 0 8vw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 17.74px;
+  padding: 0 8vw 0 8vw;
   height: 83.2vw;
 }
 .line-group-1 > div h2 {
-  font-size: 8.5vw;
-  line-height: 10vw;
+  font-size: 31.875px;
+  line-height: 37.5px;
+  max-width: 280px;
 }
 .line-group-1 > div p {
-  margin: 6.5vw 0 7vw 0;
+  margin: 24.375px 0 26.25px 0;
+  max-width: 400px;
 }
 .line-group-1 > div a {
   font-family: Fraunces;
-  font-size: 4.5vw;
+  font-size: 16.87px;
   font-weight: bold;
   color: black;
 }

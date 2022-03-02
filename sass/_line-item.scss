@@ -46,23 +46,35 @@ $desktop-img-path: "./images/desktop";
 
             text-align: center;
 
-            font-size: 4.73vw;
+            display: flex;
 
-            padding: 18vw 8vw 0 8vw;
+            flex-flow: column nowrap;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 17.74px;
+
+            padding: 0 8vw 0 8vw;
 
             height: 83.2vw;
 
             h2 {
 
-                font-size: 8.5vw;
+                font-size: 31.875px;
 
-                line-height: 10vw;
+                line-height: 37.5px;
+
+                max-width: 280px;
 
             }
 
             p {
 
-                margin: 6.5vw 0 7vw 0;
+                margin: 24.375px 0 26.25px 0;
+
+                max-width: 400px;
 
             }
 
@@ -70,7 +82,7 @@ $desktop-img-path: "./images/desktop";
 
                 font-family: Fraunces;
 
-                font-size: 4.5vw;
+                font-size: 16.87px;
 
                 font-weight: bold;
 
