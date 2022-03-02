@@ -309,13 +309,13 @@ $desktop-img-path: "./images/desktop";
 
                 padding: 0 13vw;
 
-                font-size: 1.1vw;
+                font-size: min(1.5vw, 15.84px);
 
                 h3 {
 
-                    font-size: 2vw;
+                    font-size: min(3vw, 28.8px);
 
-                    margin: 28.61vw 0 2vw 0;
+                    margin: 348px 0 28.8px 0;
 
                 }
 

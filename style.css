@@ -219,11 +219,11 @@ body > * {
   }
   .line-group-2 > div {
     padding: 0 13vw;
-    font-size: 1.1vw;
+    font-size: min(1.5vw, 15.84px);
   }
   .line-group-2 > div h3 {
-    font-size: 2vw;
-    margin: 28.61vw 0 2vw 0;
+    font-size: min(3vw, 28.8px);
+    margin: 348px 0 28.8px 0;
   }
   .line-group-3 {
     height: auto;
