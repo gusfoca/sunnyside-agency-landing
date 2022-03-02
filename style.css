@@ -55,12 +55,14 @@ body > * {
 .line-group-1 > div, .line-group-2 > div, .line-group-3 > div, .line-group-4 > div {
   width: 100vw;
 }
-.line-group-1 > div {
-  text-align: center;
+.line-group-1 > div, .line-group-2 > div {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+}
+.line-group-1 > div {
+  text-align: center;
   font-size: 17.74px;
   padding: 0 8vw 0 8vw;
   height: 83.2vw;
@@ -87,11 +89,14 @@ body > * {
   padding: 0 6.4vw 0 6.4vw;
   text-align: center;
   height: 600px;
-  font-size: 4.2vw;
+  font-size: 15.75px;
 }
 .line-group-2 > div h3 {
-  font-size: 7.5vw;
-  margin: 107vw 0 7.6vw 0;
+  font-size: 28.12px;
+  margin: 371.25px 0 28.5px 0;
+}
+.line-group-2 > div p {
+  max-width: 460px;
 }
 .line-group-3 {
   height: 1260px;
