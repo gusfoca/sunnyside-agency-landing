@@ -196,23 +196,26 @@ body > * {
   }
   .line-group-1 > div {
     text-align: initial;
-    font-size: 1.24vw;
+    align-items: flex-start;
+    font-size: min(1.6vw, 17.85px);
     height: 41.67vw;
-    padding: 11vw 6vw 0 11.458vw;
-    line-height: 2.2vw;
+    padding: 20px 6vw 0 11.458vw;
+    line-height: min(2.7vw, 31.68px);
   }
   .line-group-1 > .line-item-info {
     height: initial;
   }
   .line-group-1 > .line-item-info h2 {
-    font-size: 2.75vw;
-    line-height: 3rem;
+    font-size: min(3vw, 39.6px);
+    line-height: min(4vw, 3rem);
+    max-width: initial;
   }
   .line-group-1 > .line-item-info p {
     margin: 2.2vw 0 2.8vw 0;
+    max-width: initial;
   }
   .line-group-1 > .line-item-info a {
-    font-size: 1.15vw;
+    font-size: min(1.5vw, 16.56px);
   }
   .line-group-2 > div {
     padding: 0 13vw;

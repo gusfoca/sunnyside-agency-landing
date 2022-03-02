@@ -259,13 +259,15 @@ $desktop-img-path: "./images/desktop";
 
                 text-align: initial;
 
-                font-size: 1.24vw;
+                align-items: flex-start;
+
+                font-size: min(1.6vw, 17.85px);
 
                 height: 41.67vw;
 
-                padding: 11vw 6vw 0 11.458vw;
+                padding: 20px 6vw 0 11.458vw;
 
-                line-height: 2.2vw;
+                line-height: min(2.7vw, 31.68px);
 
             }
 
@@ -275,9 +277,11 @@ $desktop-img-path: "./images/desktop";
 
                 h2 {
 
-                    font-size: 2.75vw;
+                    font-size: min(3vw, 39.6px);
 
-                    line-height: 3rem;
+                    line-height: min(4vw, 3rem);
+
+                    max-width: initial;
 
                 }
 
@@ -285,11 +289,13 @@ $desktop-img-path: "./images/desktop";
 
                     margin: 2.2vw 0 2.8vw 0;
 
+                    max-width: initial;
+
                 }
 
                 a {
 
-                    font-size: 1.15vw;
+                    font-size: min(1.5vw, 16.56px);
 
                 }
 
