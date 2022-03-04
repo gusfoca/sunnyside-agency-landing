@@ -126,7 +126,15 @@ header {
 
 @media (max-width: bs.$desktop-start) {
 
+    .bubble.active {
+
+        display: block;
+
+    }
+
     .bubble {
+
+        display: none;
 
         background-color: white;
 

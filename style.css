@@ -387,7 +387,12 @@ header > nav .navbar-contact-link {
 }
 
 @media (max-width: 750px) {
+  .bubble.active {
+    display: block;
+  }
+
   .bubble {
+    display: none;
     background-color: white;
     position: absolute;
     padding: 38px 0 40px 0;
