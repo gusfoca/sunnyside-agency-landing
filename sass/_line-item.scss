@@ -102,6 +102,12 @@ $desktop-img-path: "./images/desktop";
         .line-item-info {
 
             height: 116.266vw;
+
+            p {
+
+                color: hsl(232, 10%, 55%);
+
+            }
         
         }
 
@@ -132,6 +138,18 @@ $desktop-img-path: "./images/desktop";
                 max-width: 460px;
 
             }
+
+        }
+
+        .line-item-graphic-design * {
+
+            color: hsl(167, 40%, 24%);
+
+        }
+
+        .line-item-photography * {
+
+            color: hsl(198, 62%, 26%);
 
         }
 
@@ -177,6 +195,8 @@ $desktop-img-path: "./images/desktop";
 
             line-height: 0;
 
+            color: hsl(210, 4%, 67%);
+
         }
 
         .testimonial {
@@ -184,6 +204,12 @@ $desktop-img-path: "./images/desktop";
             margin-top: 60px;
 
             width: 330px;
+
+            > p {
+
+                color: hsl(213, 9%, 39%);
+
+            }
 
         }
 
@@ -202,6 +228,8 @@ $desktop-img-path: "./images/desktop";
                 font-size: 17px;
 
                 letter-spacing: 4px;
+
+                color: hsl(210, 4%, 67%);
 
             }            
 

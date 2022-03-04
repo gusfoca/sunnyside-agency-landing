@@ -85,6 +85,9 @@ body > * {
 .line-group-1 .line-item-info {
   height: 116.266vw;
 }
+.line-group-1 .line-item-info p {
+  color: #818498;
+}
 .line-group-2 > div {
   padding: 0 6.4vw 0 6.4vw;
   text-align: center;
@@ -97,6 +100,12 @@ body > * {
 }
 .line-group-2 > div p {
   max-width: 460px;
+}
+.line-group-2 .line-item-graphic-design * {
+  color: #25564b;
+}
+.line-group-2 .line-item-photography * {
+  color: #19536b;
 }
 .line-group-3 {
   height: 1260px;
@@ -119,10 +128,14 @@ body > * {
 .line-group-3 .testimonial-role {
   font-size: 14px;
   line-height: 0;
+  color: #a7abae;
 }
 .line-group-3 .testimonial {
   margin-top: 60px;
   width: 330px;
+}
+.line-group-3 .testimonial > p {
+  color: #5a636c;
 }
 .line-group-3 > .lg3-hd, .line-group-3 > div {
   text-align: center;
@@ -131,6 +144,7 @@ body > * {
   width: 100vw;
   font-size: 17px;
   letter-spacing: 4px;
+  color: #a7abae;
 }
 .line-group-4 > div {
   width: 50%;
