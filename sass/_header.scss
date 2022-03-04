@@ -90,6 +90,8 @@ header {
 
                     margin-right: 50px;
 
+                    color: white;
+
                 }
 
             }            
@@ -109,6 +111,14 @@ header {
                 font-family: Fraunces;
         
                 text-align: center;
+
+                &:hover {
+
+                    color: white;
+
+                    background-color: hsla(0,0%,100%,0.3);
+
+                }
         
             }
 
@@ -158,8 +168,6 @@ header {
 
             width: 100%;
 
-            color: gray;
-
         }
 
         > a {
@@ -169,6 +177,8 @@ header {
             margin-bottom: 26px;
 
             font-size: 1.15em;
+
+            color: gray !important;
 
         }
 
@@ -182,7 +192,15 @@ header {
 
         .navbar-contact-link {
 
-            background-color: yellow;
+            background-color: hsl(51, 100%, 49%);
+
+            &:hover {
+
+                color: black;
+
+                background-color: hsla(51, 100%, 49%, 0.5);
+
+            }
 
         }
 
@@ -207,6 +225,14 @@ header {
         display: block;
 
         float: right;
+
+        filter: opacity(0.8);
+
+        &:hover {
+
+            filter: opacity(1);
+
+        }
 
     }
 

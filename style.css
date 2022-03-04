@@ -318,6 +318,12 @@ footer .text-links {
   display: flex;
   justify-content: space-between;
 }
+footer .text-links > a {
+  color: #458c7e;
+}
+footer .text-links > a:hover {
+  color: white;
+}
 footer .media-links {
   width: 165px;
   display: flex;
@@ -326,6 +332,9 @@ footer .media-links {
 footer .media-links img {
   width: 20px;
   height: 20px;
+}
+footer .media-links > a:hover img {
+  filter: brightness(8);
 }
 
 header {
@@ -371,6 +380,7 @@ header > nav .bubble {
 }
 header > nav .bubble > a {
   margin-right: 50px;
+  color: white;
 }
 header > nav .navbar-contact-link {
   color: black;
@@ -380,6 +390,10 @@ header > nav .navbar-contact-link {
   font-size: 18px;
   font-family: Fraunces;
   text-align: center;
+}
+header > nav .navbar-contact-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .nav-hamburger {
@@ -405,19 +419,23 @@ header > nav .navbar-contact-link {
   }
   .bubble > a, .bubble button {
     width: 100%;
-    color: gray;
   }
   .bubble > a {
     margin-right: initial !important;
     margin-bottom: 26px;
     font-size: 1.15em;
+    color: gray !important;
   }
   .bubble > button {
     margin-top: 10px;
     font-size: 0.85em !important;
   }
   .bubble .navbar-contact-link {
-    background-color: yellow;
+    background-color: #fad400;
+  }
+  .bubble .navbar-contact-link:hover {
+    color: black;
+    background-color: rgba(250, 212, 0, 0.5);
   }
 
   .bubble-arrow {
@@ -431,6 +449,10 @@ header > nav .navbar-contact-link {
   .nav-hamburger {
     display: block;
     float: right;
+    filter: opacity(0.8);
+  }
+  .nav-hamburger:hover {
+    filter: opacity(1);
   }
 
   header {
@@ -464,11 +486,11 @@ header > nav .navbar-contact-link {
   bottom: -3px;
   left: 0;
   border-radius: 5px;
-  background-color: yellow;
+  background-color: #ffe866;
   z-index: -1;
 }
 .learn-more-link-transform:hover > div {
-  background-color: gold;
+  background-color: #fad400;
 }
 .learn-more-link-stand-out {
   position: relative;
@@ -481,11 +503,11 @@ header > nav .navbar-contact-link {
   bottom: -3px;
   left: 0;
   border-radius: 5px;
-  background-color: magenta;
+  background-color: #fe7867;
   z-index: -1;
 }
 .learn-more-link-stand-out:hover > div {
-  background-color: red;
+  background-color: #f91e01;
 }
 
 .attribution {
