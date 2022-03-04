@@ -324,6 +324,9 @@ footer > div {
 footer img {
   height: 34px;
 }
+footer .footer-logo {
+  filter: brightness(0.3) sepia(1) hue-rotate(120deg) saturate(6);
+}
 footer .text-links {
   margin-top: 37px;
   margin-bottom: 82px;
