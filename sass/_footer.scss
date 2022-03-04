@@ -37,6 +37,18 @@ footer {
 
         justify-content: space-between;
 
+        > a {
+
+            color: hsl(168, 34%, 41%);
+
+            &:hover {
+
+                color: white;
+
+            }
+
+        }
+
     }
 
     .media-links {
@@ -52,6 +64,12 @@ footer {
             width: 20px;
 
             height: 20px;
+
+        }
+
+        > a:hover img {
+
+            filter: brightness(8);
 
         }
 
