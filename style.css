@@ -369,7 +369,7 @@ header > nav .bubble {
   float: right;
   width: max-content;
 }
-header > nav .bubble a {
+header > nav .bubble > a {
   margin-right: 50px;
 }
 header > nav .navbar-contact-link {
@@ -403,6 +403,7 @@ header > nav .navbar-contact-link {
     color: gray;
   }
   .bubble > a {
+    margin-right: initial !important;
     margin-bottom: 26px;
     font-size: 1.15em;
   }
