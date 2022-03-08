@@ -34,7 +34,7 @@ $desktop-img-path: "./images/desktop";
 
         > div {
 
-            width: 100vw;
+            width: 100%;
 
         }
 
@@ -275,7 +275,7 @@ $desktop-img-path: "./images/desktop";
 
             > div {
     
-                width: 49vw;
+                width: 50%;
     
             }
     
@@ -293,7 +293,7 @@ $desktop-img-path: "./images/desktop";
 
                 height: 41.67vw;
 
-                padding: 20px 6vw 0 11.458vw;
+                padding: 20px 6vw 0 13vw;
 
                 line-height: min(2.7vw, 31.68px);
 
