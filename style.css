@@ -44,10 +44,6 @@ body {
   font-family: Barlow;
 }
 
-body > * {
-  outline: 1px solid red;
-}
-
 .line-group-1, .line-group-2, .line-group-3, .line-group-4 {
   display: flex;
   flex-wrap: wrap;
