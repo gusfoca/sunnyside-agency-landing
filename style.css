@@ -351,7 +351,9 @@ footer .media-links > a:hover img {
 }
 
 header {
-  background: url("./images/desktop/image-header.jpg") center/cover no-repeat;
+  background-image: url("./images/desktop/mobile-images.jpg");
+  background-position: 49.9666% 0;
+  background-size: 500.2666%;
   height: 55.55vw;
   color: white;
 }
@@ -469,7 +471,9 @@ header > nav .navbar-contact-link:hover {
   }
 
   header {
-    background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
+    background-image: url("./images/mobile/mobile-images.jpg");
+    background-position: 49.9666% 0;
+    background-size: 500.2666%;
     height: 143.2vw;
   }
   header > nav {
