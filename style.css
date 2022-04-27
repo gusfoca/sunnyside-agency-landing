@@ -159,17 +159,17 @@ body {
   background-repeat: no-repeat;
   background-image: url("./images/mobile/image-stand-out.jpg");
 }
-.line-item-photography {
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-image: url("./images/mobile/image-photography.jpg");
-}
 .line-item-graphic-design {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
   background-image: url("./images/mobile/image-graphic-design.jpg");
+}
+.line-item-photography {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url("./images/mobile/image-photography.jpg");
 }
 .line-item-gallery-cone {
   background-size: cover;
@@ -194,6 +194,56 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg");
+}
+@media (max-width: 750px) {
+  .line-item-transform {
+    background-size: 500.2666666667%;
+    background-position: 74.9499% 100%;
+    background-repeat: no-repeat;
+    background-image: url("./images/mobile/mobile-images.jpg");
+  }
+  .line-item-stand-out {
+    background-size: 500.2666666667%;
+    background-position: 74.9499% 0;
+    background-repeat: no-repeat;
+    background-image: url("./images/mobile/mobile-images.jpg");
+  }
+  .line-item-graphic-design {
+    background-size: 500.2666666667%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url("./images/mobile/mobile-images.jpg");
+  }
+  .line-item-photography {
+    background-size: 500.2666666667%;
+    background-position: 24.9833% 0;
+    background-repeat: no-repeat;
+    background-image: url("./images/mobile/mobile-images.jpg");
+  }
+  .line-item-gallery-cone {
+    background-size: 997.8723404255%;
+    background-position: 88.8655981% 0;
+    background-repeat: no-repeat;
+    background-image: url("./images/mobile/mobile-images.jpg");
+  }
+  .line-item-gallery-milkbottles {
+    background-size: 997.8723404255%;
+    background-position: 88.8655981% 43.005%;
+    background-repeat: no-repeat;
+    background-image: url("./images/mobile/mobile-images.jpg");
+  }
+  .line-item-gallery-orange {
+    background-size: 997.8723404255%;
+    background-position: 88.8655981% 86.01%;
+    background-repeat: no-repeat;
+    background-image: url("./images/mobile/mobile-images.jpg");
+  }
+  .line-item-gallery-sugar-cubes {
+    background-size: 997.8723404255%;
+    background-position: 99.9332% 0;
+    background-repeat: no-repeat;
+    background-image: url("./images/mobile/mobile-images.jpg");
+  }
 }
 
 @media (min-width: 750px) {
@@ -272,17 +322,17 @@ body {
     background-repeat: no-repeat;
     background-image: url("./images/desktop/image-stand-out.jpg");
   }
-  .line-item-photography {
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-image: url("./images/desktop/image-photography.jpg");
-  }
   .line-item-graphic-design {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     background-image: url("./images/desktop/image-graphic-design.jpg");
+  }
+  .line-item-photography {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url("./images/desktop/image-photography.jpg");
   }
   .line-item-gallery-cone {
     background-size: cover;

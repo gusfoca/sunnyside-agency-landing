@@ -1,12 +1,28 @@
 @use "breakpoints" as bp;
+@use "sass:list";
 
-$line-items: "transform", "stand-out", "photography", "graphic-design",
-             "gallery-cone", "gallery-milkbottles", "gallery-orange", "gallery-sugar-cubes";
+$mobile-images-width: 3752px;
 
 $mobile-img-path: "./images/mobile";
 
 $desktop-img-path: "./images/desktop";
 
+$line-items: "transform", "stand-out", "graphic-design", "photography", "gallery-cone",
+
+    "gallery-milkbottles", "gallery-orange", "gallery-sugar-cubes", ;
+
+$line-items2: (
+
+    ("transform", 750px, calc(3*24.9833%), 100%),
+    ("stand-out", 750px, calc(3*24.9833%), 0),
+    ("graphic-design", 750px, 0, 0),
+    ("photography", 750px, 24.9833%, 0),
+    ("gallery-cone", 376px, calc(3.557*24.9833%), 0),
+    ("gallery-milkbottles", 376px, calc(3.557*24.9833%), 43.005%),
+    ("gallery-orange", 376px, calc(3.557*24.9833%), calc(2*43.005%) ),
+    ("gallery-sugar-cubes", 376px, calc(4*24.9833%), 0),
+
+);
 
 @mixin line-item($bg-image: none) {
 
@@ -19,6 +35,25 @@ $desktop-img-path: "./images/desktop";
         repeat: no-repeat;
 
         image: if($bg-image, url($bg-image), null);
+
+    }
+
+}
+
+@mixin line-item2($image: none, $item-width: 0, $image-width: 0,
+
+    $positionX: 0, $positionY: 0)
+{
+
+    background: {
+
+        size: calc($image-width / $item-width) * 100%;
+
+        position: $positionX $positionY;
+
+        repeat: no-repeat;
+
+        image: if($image, url($image), null);
 
     }
 
@@ -259,6 +294,31 @@ $desktop-img-path: "./images/desktop";
 
     }
 
+    @media (max-width: bp.$desktop-start) {
+
+        @each $item in $line-items2 {
+
+            $item-name: list.nth($item, 1);
+
+            &-#{$item-name} {
+
+                @include line-item2(
+
+                    $image: "#{$mobile-img-path}/mobile-images.jpg",
+
+                    $item-width: list.nth($item, 2),
+
+                    $image-width: $mobile-images-width,
+
+                    $positionX: list.nth($item, 3),
+
+                    $positionY: list.nth($item, 4)
+
+                );
+
+            }
+        }
+    }
 }
 
 @media (min-width: bp.$desktop-start) {
