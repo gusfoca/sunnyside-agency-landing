@@ -8,6 +8,12 @@
     background-position: calc(2*24.9833%) 0;
     background-size: 500.2666%;
 
+    @media (min-width: bs.$desktop-start) {
+
+        background: url("#{$path}/image-header.jpg") center / cover no-repeat;
+
+    }
+
 }
 
 header {

@@ -407,6 +407,11 @@ header {
   height: 55.55vw;
   color: white;
 }
+@media (min-width: 750px) {
+  header {
+    background: url("./images/desktop/image-header.jpg") center/cover no-repeat;
+  }
+}
 header > h1 {
   position: absolute;
   top: 9.5vw;
@@ -526,6 +531,13 @@ header > nav .navbar-contact-link:hover {
     background-size: 500.2666%;
     height: 143.2vw;
   }
+}
+@media (max-width: 750px) and (min-width: 750px) {
+  header {
+    background: url("./images/mobile/image-header.jpg") center/cover no-repeat;
+  }
+}
+@media (max-width: 750px) {
   header > nav {
     padding: 30px 25px;
   }
