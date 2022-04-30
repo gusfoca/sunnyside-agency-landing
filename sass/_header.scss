@@ -4,21 +4,14 @@
 
 @mixin header-background($path) {
 
-    background-image: url("#{$path}/mobile-images.jpg");
+    background-image: url($path);
     background-position: calc(2*24.9833%) 0;
     background-size: 500.2666%;
-
-    @media (min-width: bs.$desktop-start) {
-
-        background: url("#{$path}/image-header.jpg") center / cover no-repeat;
-
-    }
-
 }
 
 header {
 
-    @include header-background($path: $desktop-img-path);
+    @include header-background($path: "#{$desktop-img-path}/desktop-images.jpg");
 
     height: 55.55vw;
 
@@ -142,7 +135,7 @@ header {
 
 }
 
-@media (max-width: bs.$desktop-start) {
+@media (max-width: bs.$mobile-end) {
 
     .bubble.active {
 
@@ -246,7 +239,7 @@ header {
 
     header {
 
-        @include header-background($path: $mobile-img-path);
+        @include header-background($path: "#{$mobile-img-path}/mobile-images.jpg");
 
         height: 143.2vw;
 
