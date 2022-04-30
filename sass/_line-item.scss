@@ -3,13 +3,11 @@
 
 $mobile-images-width: 3752px;
 
+$desktop-images-width: 3752px;
+
 $mobile-img-path: "./images/mobile";
 
 $desktop-img-path: "./images/desktop";
-
-$line-items: "transform", "stand-out", "graphic-design", "photography", "gallery-cone",
-
-    "gallery-milkbottles", "gallery-orange", "gallery-sugar-cubes", ;
 
 $line-items2: (
 
@@ -284,17 +282,33 @@ $line-items2: (
 
 .line-item {
 
-    @each $item in $line-items {
+    @media (min-width: bp.$desktop-start) {
 
-        &-#{$item} {
+        @each $item in $line-items2 {
 
-            @include line-item("#{$mobile-img-path}/image-#{$item}.jpg");
+            $item-name: list.nth($item, 1);
 
+            &-#{$item-name} {
+
+                @include line-item2(
+
+                    $image: "#{$desktop-img-path}/desktop-images.jpg",
+
+                    $item-width: list.nth($item, 2),
+
+                    $image-width: $desktop-images-width,
+
+                    $positionX: list.nth($item, 3),
+
+                    $positionY: list.nth($item, 4)
+
+                );
+
+            }
         }
-
     }
 
-    @media (max-width: bp.$desktop-start) {
+    @media (max-width: bp.$mobile-end) {
 
         @each $item in $line-items2 {
 
@@ -464,19 +478,4 @@ $line-items2: (
         }
 
     }
-
-    .line-item {
-
-        @each $item in $line-items {
-
-            &-#{$item} {
-
-                @include line-item("#{$desktop-img-path}/image-#{$item}.jpg");
-
-            }
-
-        }
-
-    }
-
 }
